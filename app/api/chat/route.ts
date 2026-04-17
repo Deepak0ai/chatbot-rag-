@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 import { GoogleGenerativeAI } from "@google/generative-ai";
-import { retrieveContext } from "../../../lib/knowledgeBase";
-
+import { retrieveContext } from "@/lib/knowledgeBase";
 const genAI = new GoogleGenerativeAI(
   process.env.GOOGLE_GENERATIVE_AI_API_KEY || ""
 );
